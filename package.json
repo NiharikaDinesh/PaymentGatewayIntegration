@@ -1,0 +1,11 @@
+{
+  "name": "little-hands",
+  "version": "1.0.0",
+  "description": "The Spark Foundation's Task under the GRIP Program in which I have developed a Frontend Website with the Payment Gateway Integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- || meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- || title tag & tab icon -->
+    <title>Little Hands</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon1/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon1/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon1/favicon-16x16.png">
+<link rel="manifest" href="favicon1/site.webmanifest">
+
+    <!-- || Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- || AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- || Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/assurance.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    
+    <style>
+        .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d ;
+    animation: animate 20s  linear infinite;
+} 
+@keyframes animate{
+    0%{
+        transform:perspective(1000px) rotateY(0deg);
+    }
+    
+    100%{
+        transform:perspective(1000px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+}
+
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-reflect: below 0px linear gradient(transparent,transparent,#0004);
+} 
+#footer{
+    background-color:rgba(102, 51, 153, 0.637);
+      margin-left: 0%;
+      margin-right: 0%;
+   
+    text-align: center;
+}
+
+.foo{
+  padding: 20px 18px;
+}
+    </style>
+</head> 
+
+<body onscroll="checkWidthDoAnime()">
+    <!-- || Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" data-aos="fade-right">
+                <img src="./img/banner/logo2.jpg" alt="Logo" style="height: 50px;width: 200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-4" data-aos="fade-left">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#donate">DONATE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#assurance">ASSURANCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analytics">ANALYTICS</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus" tabindex="-1">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- || Navbar Section End -->
+
+
+    <!-- || Banner & Payment Section Start -->
+    <main id="donate">
+        <div class="banner_box">
+            <img src="./img/banner/ngo.jpg" alt="Banner Image" />
+            <div class="overlay">
+                <div data-aos="fade-up">
+                    <h5 class="banner_heading">For it is in giving that we receive</h5>
+                    <p class="banner_text">“Remember that the happiest people are not those getting more, but those giving more.” 
+                        <br />
+                        
+                        <br />
+                        <span class="banner_text_author">―H. Jackson Brown Jr</span>
+                    </p>
+                    
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GmVbGh5Xxzv6Hl" async>
+                        </script> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- || Banner & Payment Section End -->
+
+    <!-- || Analytics Section End -->
+<!-- || Assurances Start -->
+<section id="assurance">
+    <div class="container pb-4">
+        <h2 class="section_heading" data-aos="fade-up">
+            <span>Our Assurance to You</span>
+            <span></span>
+        </h2>
+
+        <div class="container assurance_box">
+            <div class="assurance_item" id="item1" data-aos="fade-right">
+                <div class="assurance_img_box">
+                    <img src="./img/assurance/trustable.png" alt="Trustable Assurance" />
+                </div>
+                <div class="assurance_content">
+                    <p>50+ global organizations analyze for Transparency & Credibility</p>
+                </div>
+            </div>
+            <div class="assurance_item" id="item2" data-aos="fade-up">
+                <div class="assurance_img_box">
+                    <img src="./img/assurance/transparency.png" alt="Transparency Assurance" />
+                </div>
+                <div class="assurance_content">
+                    <p>Detailed feedback on the utilisation of your contribution</p>
+                </div>
+            </div>
+            <div class="assurance_item" id="item3" data-aos="fade-left">
+                <div class="assurance_img_box">
+                    <img src="./img/assurance/experience.png" alt="Experience Assurance" />
+                </div>
+                <div class="assurance_content">
+                    <p>Lowest cost of fundraising exprensed around the world</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- || Assurances End -->
+
+
+    <!-- || FAQs Section Start -->
+    <section id="faqs">
+        <div class="container">
+            <h2 class="section_heading pb-4" data-aos="fade-up">
+                <span>About Us</span>
+                <span></span>
+            </h2>
+
+            <div id="about" class="container-fluid">
+                
+                <div class="row">
+              
+                      <div class="col-lg-6">
+                          <br><br><br>
+                        <div class="box">
+                            <span style=" --i:1;"><img src="./img/banner1/1.jpg" alt="1"></span>
+                            <span style=" --i:2;"><img src="./img/banner1/2.jpg" alt="2"></span>
+                            <span style=" --i:3;"><img src="./img/banner1/3.jpg" alt="3"></span>
+                            <span style=" --i:4;"><img src="./img/banner1/4.jpg" alt="4"></span>
+                            <span style=" --i:5;"><img src="./img/banner1/5.jpg" alt="5"></span>
+                            <span style=" --i:6;"><img src="./img/banner1/6.jpg" alt="6"></span>
+                            <span style=" --i:7;"><img src="./img/banner1/7.jpg" alt="7"></span>
+                            <span style=" --i:8;"><img src="./img/banner1/8.jpg" alt="8"></span>
+                            <span style=" --i:9;"><img src="./img/banner1/9.jpg" alt="9"></span>
+                        </div>
+              
+                      </div>
+              
+              
+                    <div class="col-lg-6">
+                       
+                    <p style="color: black;font-size: 1.3em;">  
+                        LITTLE HANDS is a Global non-profit organization and most trusted online donation platform, having
+                        enabled giving in India for the last 20 years. It is a nonprofit organisation with a
+                        giving community of millions of donors who support a vast network of 1250+ verified
+                        nonprofits across India, touching the lives of millions of people every year.
+                        It retains a maximum of 10% in order to provide you with high quality support
+                                    when transacting through us. This helps us recover a reasonable portion of our
+                                    operating costs. This small donation that you give us reduces our dependence on
+                                    grants and helps us in becoming sustainable in the long run to serve donors, NGOs
+                                    and beneficiaries better.
+                        
+                   
+                    </div>
+                  </div>
+              
+              
+              
+                </div>
+
+            
+    <!-- || FAQs Section End -->
+
+
+    
+    
+
+   
+    <!-- || Analytics Section Start -->
+    <section id="analytics">
+        <div class="">
+            <h2 class="section_heading pb-3" data-aos="fade-up">
+                <span>Our Analytics</span>
+                <span></span>
+            </h2>
+
+            <div class="analytics_box mt-4 pt-3 pb-4" data-aos="fade-up">
+                <div class="analytics_item" data-aos="fade-right" data-delay="150">
+                    <img src="./img/ICON/donation.png" alt="Donators" />
+                    <h3 class="analytics_count"><span data-count="250">0</span>+</h3>
+                    <h5 class="analytics_term">Donators</h5>
+                </div>
+                <div class="analytics_item" data-aos="fade-up">
+                    <img src="./img/ICON/project.jpg" alt="Projects" />
+                    <h3 class="analytics_count"><span data-count="10">0</span>+</h3>
+                    <h5 class="analytics_term">Projects</h5>
+                </div>
+                <div class="analytics_item" data-aos="fade-left" data-delay="250">
+                    <img src="./img/ICON/team.png" alt="Team" />
+                    <h3 class="analytics_count"><span data-count="40">0</span>+</h3>
+                    <h5 class="analytics_term">Team</h5>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- || Contact Us Section Start -->
+    <section id="contactus">
+        <div class="container-fluid mt-4 mb-5">
+            <h2 class="section_heading" data-aos="fade-up">
+                <span>Contact Us</span>
+                <span></span>
+            </h2>
+
+            <div class="container-fluid pb-4">
+                <div class="row pt-3" id="contact_section">
+                    <div class="col-md-6 order-md-first order-last mt-4">
+                        <!-- Contact Form -->
+                        <div class="container-lg px-lg-5">
+                            <form class="contact_form" onsubmit="event.preventDefault(); contactUs();"
+                                autocomplete="off" method="GET">
+                                <div class="mb-4" data-aos="fade-up-right">
+                                    <label for="contactName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="contactName" aria-describedby="nameHelp"
+                                        required />
+                                </div>
+                                <div class="mb-4" data-aos="fade-up-left">
+                                    <label for="contactEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" required />
+                                </div>
+                                <div class="mb-4" data-aos="fade-up-right">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="contactSubject" required />
+                                </div>
+                                <div class="mb-4" data-aos="fade-up-left">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea name="contactMessage" class="form-control" id="contactMessage" rows="3"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-secondary submit_button" data-aos="fade-up">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-last order-first mt-4">
+                        <!-- Map -->
+                        <iframe style="width: 30rem;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99741284817!2d77.35073230456736!3d12.953847712848582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1617662922807!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- || Contact Us Section End -->
+    
+
+    <!-- || Footer Section Start -->
+    <footer id="footer" class="px-md-5 px-4 pt-1">
+        <p class="pt-2">Copyright&copy; 2021 By <span>NIHARIKA </span></p>
+    </footer>
+    
+    <!-- || Footer Section End -->
+
+
+    <!-- || Inbuilt & Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"
+        defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" defer></script>
+        
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Index -->
+    <script src="./js/index.js"></script>
+
+    <!-- Analytics Count -->
+    <script src="./js/analyticsCount.js" defer></script>
+
+    <!-- Razorpay Payment -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <script src="./js/razorpay.js" defer></script>
+
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
