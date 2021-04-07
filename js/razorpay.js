@@ -1,10 +1,10 @@
 var options = {
-    "key": "rzp_test_RrGU3Gb8KAEDLy",
+    "key": "rzp_test_SnHyK0mP1acPXv",
     // Enter the Key ID generated from the Dashboard    
     "amount": "320*100",
     // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise    
     "currency": "INR",
-    "name": "GIVE FOR GOOD",
+    "name": "LITTLE HANDS",
     "description": "Test Transaction",
     "image": "https://www.clipartmax.com/png/middle/138-1389413_paypal-clipart-donate-button-donate-button-png.png",
     "order_id": "order_9A33XWu170gUtm",
